@@ -1,0 +1,5 @@
+teste,energia_eV,a_ang,b_ang,c_ang,magnetizacao,cpu_time_s,scf_steps,rms_total,rms_broyden,rms_prec
+10x10x8,,,,,(),,,,,
+4x4x2,-38.78693765,6.154088642527827,6.15373957516135,22.818631518127944,(),1843.977,30.0,8.4442e-06,8.4442e-06,
+6x6x4,,,,,(),,,,,
+8x8x6,,,,,(),,,,,
