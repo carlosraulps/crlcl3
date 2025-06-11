@@ -1,0 +1,4 @@
+dir,encut,kpoints,energy_eV,magnetization,scf_steps,cpu_time
+encut_300,300,default,-38.78015357,6.0009690,22,"224.8175:"
+encut_350,350,default,-38.78603354,6.0009472,22,"226.9599:"
+encut_400,400,default,-38.78647887,6.0019065,21,"228.6729:"
