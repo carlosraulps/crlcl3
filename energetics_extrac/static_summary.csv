@@ -1,0 +1,6 @@
+ENCUT,ISMEAR,SIGMA,EDIFF,ISPIN,MAGMOM,TOTEN_eV,CPU_sec,Elapsed_sec,test
+500,0,0.05,1E-6,2,1*5.0,-8.25682366,4590.026,9305.118,cr_bulk
+500,0,0.05,1E-6,2,1*1.0,,,,cl_atom
+500,0,0.05,1E-6,2,2*3.0,-38.87790344,6286.312,11002.179,crcl3_solid
+500,0,0.05,1E-6,2,1*5.0,,,,cr_atom
+500,0,0.05,1E-6,2,2*1.0,,,,cl2_molecule
