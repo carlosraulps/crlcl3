@@ -1,0 +1,73 @@
+ running   42 mpi-ranks, on    1 nodes
+ distrk:  each k-point on   42 cores,    1 groups
+ distr:  one band on    1 cores,   42 groups
+ vasp.6.5.1 10Mar25 (build Apr 08 2025 20:07:02) complex                        
+  
+ POSCAR found type information on POSCAR CrCl
+ POSCAR found :  2 types and       8 ions
+ scaLAPACK will be used
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     For optimal performance we recommend to set                             |
+|       NCORE = 2 up to number-of-cores-per-socket                            |
+|     NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).      |
+|     This setting can greatly improve the performance of VASP for DFT.       |
+|     The default, NCORE=1 might be grossly inefficient on modern             |
+|     multi-core architectures or massively parallel machines. Do your        |
+|     own testing! More info at https://www.vasp.at/wiki/index.php/NCORE      |
+|     Unfortunately you need to use the default for GW and RPA                |
+|     calculations (for HF NCORE is supported but not extensively tested      |
+|     yet).                                                                   |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     Inconsistent Bravais lattice types found for crystalline and            |
+|     reciprocal lattice:                                                     |
+|                                                                             |
+|        Crystalline: base-centered monoclinic                                |
+|        Reciprocal : triclinic                                               |
+|                    (instead of base-centered monoclinic)                    |
+|                                                                             |
+|     In most cases this is due to inaccuracies in the specification of       |
+|     the crytalline lattice vectors.                                         |
+|                                                                             |
+|     Suggested SOLUTIONS:                                                    |
+|      ) Refine the lattice parameters of your structure,                     |
+|      ) and/or try changing SYMPREC.                                         |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ LDA part: xc-table for (Slater+PW92), standard interpolation
+ WARNING: stress and forces are not correct
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ... GRIDC
+ FFT: planning ... GRID_SOFT
+ FFT: planning ... GRID
+ WAVECAR not read
+ charge-density read from file: CrCl3                                   
+ magnetization density read from file 1
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.376410808696E+03    0.37641E+03   -0.16781E+04 10080   0.755E+02
+DAV:   2    -0.118832954559E+02   -0.38829E+03   -0.38521E+03 19110   0.171E+02
+DAV:   3    -0.381851410961E+02   -0.26302E+02   -0.26214E+02 10122   0.593E+01
+DAV:   4    -0.387373414620E+02   -0.55220E+00   -0.55220E+00 19950   0.120E+01
+DAV:   5    -0.387376449972E+02   -0.30354E-03   -0.30354E-03 16716   0.245E-01
+DAV:   6    -0.387376470816E+02   -0.20845E-05   -0.20845E-05 20076   0.145E-02
+   1 F= -.38737647E+02 E0= -.38737647E+02  d E =-.186535E-12  mag=     6.0000
